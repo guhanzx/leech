@@ -131,7 +131,7 @@ def multi_rclone_init():
         with open("rclone_bak.conf", "w+", newline="\n", encoding="utf-8") as fole:
             with open("rclone.conf", "r") as f:
                 fole.write(f.read())
-        LOGGER.info("rclone.conf backuped to rclone_bak.conf!")
+        
 
 
 multi_rclone_init()
