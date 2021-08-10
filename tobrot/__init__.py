@@ -123,8 +123,7 @@ user_settings = defaultdict(lambda: {})
 
 def multi_rclone_init():
     if RCLONE_CONFIG:
-        LOGGER.warning("Don't use this var now, put your rclone.conf in root directory")
-    if not os.path.exists("rclone.conf"):
+            if not os.path.exists("rclone.conf"):
         LOGGER.warning("Sed, No rclone.conf found in root directory")
         return
     if not os.path.exists("rclone_bak.conf"):  # backup rclone.conf file
